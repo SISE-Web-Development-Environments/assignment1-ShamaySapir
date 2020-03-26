@@ -8,18 +8,17 @@
 	justify-content: center;
 }
 
-
 #nav {
-	width: 80%;
+	width: 70%;
 	height: 100%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-
 }
 
 #nav a {
-	 font-size: 25px;
+	 font-size: 15px;
+	 font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 #nav a:link {
@@ -32,10 +31,7 @@
 .navLink {
 	display: flex;
 	justify-content: space-around;
-}
-
-.navLink {
-	padding-left: 10px;
+	padding-left: 5px;
 }
 
 .navLink:not(:last-child) {
@@ -43,6 +39,29 @@
 	border-right-width: 2px;
 	border-right-style: solid;
 	padding-right: 50px;
+}
+
+.main {
+	padding-top: 12em;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	text-align: center;
+}
+
+#about {
+	padding-bottom: 5em;
+	background-image: url("about.jpg");
+	background-repeat: no-repeat;
+}
+
+.headline {
+	padding-top: 40px;
+	font-size: 50px;
+	padding-bottom: 20px;
+	color: #3377ff;
+}
+
+.about {
+	font-size: 20px;
 }
 
 .container1 {
