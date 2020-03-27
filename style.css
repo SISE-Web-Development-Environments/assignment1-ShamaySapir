@@ -42,7 +42,7 @@
 }
 
 .main {
-	padding-top: 12em;
+	padding-top: 11em;
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	text-align: center;
 }
@@ -103,6 +103,7 @@ hr {
 	position: relative;
 	width: 50vw;
 	margin-left: 400px;
+	padding-bottom: 1em;
   }
   
   /* Hide the images by default */
@@ -184,6 +185,10 @@ hr {
   .demo:hover {
 	opacity: 1;
   }
+
+#playlist {
+	margin-top: 1em;
+}
 
 .send {
 background-color: #4CAF50;
