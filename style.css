@@ -195,9 +195,21 @@ hr {
 	background-repeat: no-repeat;
 	margin-top: 4em;
 	padding-top: 15em;
-	padding-bottom: 6em;
+	padding-bottom: 4em;
 	width: 80vw;
 	margin-left: 10em;
+}
+
+#qrcoder {
+	background-image: url("https://www.pngitem.com/pimgs/m/297-2974836_ftestickers-frame-borders-flowers-blue-clipart-png-flower.png");
+	background-repeat: no-repeat;
+	padding-top: 7em;
+	padding-bottom: 20em;
+	margin-left: 20em;
+	width: 55vw;
+	margin-left: 26em;
+	padding-right: 2em;
+
 }
 
 .send {
