@@ -47,6 +47,7 @@
 	text-align: center;
 }
 
+
 #about {
 	padding-bottom: 5em;
 	background-image: url("images/about.jpg");
@@ -158,7 +159,7 @@
 }
 
 #like {
-	background-image: url("https://i.pinimg.com/originals/02/9a/76/029a7600fd693188b02908a96f698aed.jpg");
+	background-image: url("images/frame2.jpg");
 	background-repeat: no-repeat;
 	margin-top: 4em;
 	padding-top: 15em;
@@ -168,7 +169,7 @@
 }
 
 #qrcoder {
-	background-image: url("https://www.pngitem.com/pimgs/m/297-2974836_ftestickers-frame-borders-flowers-blue-clipart-png-flower.png");
+	background-image: url("images/frame.png");
 	background-repeat: no-repeat;
 	padding-top: 7em;
 	padding-bottom: 20em;
