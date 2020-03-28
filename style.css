@@ -224,12 +224,11 @@ height: 30px;
 #text_wrapper {
 	border: 1px solid #ccc;
 	width: 300px;
-  }
-  #text {  
-	outline: none;
-	min-height:100px;
+	height: 150px;
 	text-align: start;
+	margin-top: 2em;
   }
+
   #text img {
 	width: 20px;
   }

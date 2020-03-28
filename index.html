@@ -183,7 +183,7 @@
       
       <section id="like" class="section">
         <div class="headline"> Do you want to play with me? &#x1F970<br> Give me a like and throw me the ball &#x1F3BE</div>
-        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fsise-web-development-environments.github.io%2Fassignment1-ShamaySapir%2F&width=67&layout=box_count&action=like&size=large&share=false&height=65&appId" width="67" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fsise-web-development-environments.github.io%2Fassignment1-ShamaySapir%2F&width=67&layout=box_count&action=like&size=large&share=false&height=65&appId" width="70" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
       </section>
       
       <section id="qrcoder" class="section">
@@ -199,26 +199,23 @@
       <section id="contact"  class="formContainer">
         <div class="headline"> Contact me </div>
 
-        <form action="mailto:shamayroi@gmail.com" method="post">
+        <form action="mailto:shamayroi@gmail.com" method="POST" enctype="text/plain">
           <div>
             <p>Please fill in this form to contact me</p>
             <hr>
             <div>
               <label for="email"><b>Email: &nbsp</b></label>
-              <input class="email" type="text" placeholder="Enter Email" name="email" required>  
+              <input class="email" type="text" placeholder="Enter Email" name="email" required></input>  
             </div>
-              <br>
             <div class="content">
               <label><b>Content: &nbsp</b></label>
-              <div id="text_wrapper">
-                <div id="text" contentEditable="true" hidefocus="true" type="text" required></div>
-              </div>
+              <textarea id="text_wrapper" type="text" name="content" required> </textarea>
             </div>
             <div class="emojiList">
-              <span id="heart" onClick=addEmoji("&#x1F49C")> &#x1F49C</span>
+              <span id="heart" onClick=addEmoji("&#x1F49C")>&#x1F49C</span>
               <span id="stars" onClick=addEmoji("&#x1F929")> &#x1F929</span>
-              <span id="kiss" onClick=addEmoji("😘")> 😘</span>
-              <span id="dog2" onClick=addEmoji("&#x1F415")> &#x1F415</span>
+              <span id="kiss" onClick=addEmoji("&#x1F618")>&#x1F618</span>
+              <span id="dog2" onClick=addEmoji("&#128021")> &#128021</span>
               <span id="bone" onClick=addEmoji("&#x1F9B4")> &#x1F9B4</span>
               <span id="paw" onClick=addEmoji("&#x1F43E")> &#x1F43E</span>
               <span id="tennis" onClick=addEmoji("&#x1F3BE")> &#x1F3BE</span>
@@ -253,12 +250,6 @@ $(function(){
  $(document).scroll(function() {
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
- </script>
-
-<script type="text/javascript">
-  ("#button").click(function() {
-    $("#text").append('<h1>&#x1F436</h1>');
-  });
 </script>
 
   <script>
@@ -294,8 +285,8 @@ $(function(){
 
   <script>
     function addEmoji(emojiNum) {
-      var emoji = document.getElementById("text");
-      emoji.innerHTML += emojiNum;
+      var emoji = document.getElementById("text_wrapper");
+      emoji.value += emojiNum;
     }
   </script>
 
