@@ -196,31 +196,34 @@
 
       </section>
       
-      <section id="contact" class="section">
+      <section id="contact"  class="formContainer">
         <div class="headline"> Contact me </div>
 
-        <form action="mailto:shamayroi@gmail.com" method="post" enctype="text/plain" >
-          <div class="container">
+        <form action="mailto:shamayroi@gmail.com" method="post">
+          <div>
             <p>Please fill in this form to contact me</p>
             <hr>
             <div>
               <label for="email"><b>Email: &nbsp</b></label>
               <input class="email" type="text" placeholder="Enter Email" name="email" required>  
             </div>
-            <div id="text_wrapper">
-              <div id="text" contentEditable="true" hidefocus="true"></div>
-              </div>
-              
-              <span id="button">Add Emoji</span>
-            <div>
-              <label for="psw"><b>Content:</b></label>
-              <div>
-                <textarea contentEditable="true" id="textarea" name="content" rows="10" cols="50" required> </textarea>
+              <br>
+            <div class="content">
+              <label><b>Content: &nbsp</b></label>
+              <div id="text_wrapper">
+                <div id="text" contentEditable="true" hidefocus="true" type="text" required></div>
               </div>
             </div>
-            <p>❤️ &#x1F354</p>
-            <div>
-              <span id="emoji"> &#x1F436 </span>
+            <div class="emojiList">
+              <span id="heart" onClick=addEmoji("&#x1F49C")> &#x1F49C</span>
+              <span id="stars" onClick=addEmoji("&#x1F929")> &#x1F929</span>
+              <span id="kiss" onClick=addEmoji("😘")> 😘</span>
+              <span id="dog2" onClick=addEmoji("&#x1F415")> &#x1F415</span>
+              <span id="bone" onClick=addEmoji("&#x1F9B4")> &#x1F9B4</span>
+              <span id="paw" onClick=addEmoji("&#x1F43E")> &#x1F43E</span>
+              <span id="tennis" onClick=addEmoji("&#x1F3BE")> &#x1F3BE</span>
+              <span id="dog" onClick=addEmoji("&#x1F436")> &#x1F436 </span>
+
             </div>
             <hr>
             
@@ -289,7 +292,12 @@ $(function(){
     }
   </script>
 
-
+  <script>
+    function addEmoji(emojiNum) {
+      var emoji = document.getElementById("text");
+      emoji.innerHTML += emojiNum;
+    }
+  </script>
 
 
 </body>

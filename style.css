@@ -64,39 +64,6 @@
 	font-size: 20px;
 }
 
-hr {
-	width: 400px;
-}
-
-#emoji {
-	size: 30px;
-}
-
-
-#text_wrapper {
-	margin: 40px;
-	border: 1px solid #ccc;
-  }
-  #text {  
-	outline: none;
-	min-height:200px;
-  }
-  #text img {
-	width: 20px;
-  }
-  
-  #button {
-	color: #bbb;
-	margin-left: 40px;
-  }
-
-  * {
-	box-sizing: border-box;
-  }
-  
-  img {
-	vertical-align: middle;
-  }
   
   /* Position the image container (needed to position the left and right arrows) */
   .container {
@@ -212,6 +179,31 @@ hr {
 
 }
 
+.formContainer {
+	width: 60vw;
+	margin-left: 22em;
+	-webkit-box-shadow: -5px 10px 36px 9px rgba(16,154,204,1);
+	-moz-box-shadow: -5px 10px 36px 9px rgba(16,154,204,1);
+	box-shadow: -5px 10px 36px 9px rgba(16,154,204,1);
+}
+
+.content {
+	display: flex;
+	margin-left: 22em;
+}
+
+hr {
+	width: 500px;
+}
+
+.emojiList {
+	padding-left: 10em;
+}
+
+.emojiList span {
+	font-size: 25px;
+}
+
 .send {
 background-color: #4CAF50;
 color: white;
@@ -221,9 +213,36 @@ border: none;
 cursor: pointer;
 width: 100px;
 opacity: 0.9;
+font-size: 20px;
 }
 
 .email {
 width: 200px;
-height: 20px;
+height: 30px;
 }
+
+#text_wrapper {
+	border: 1px solid #ccc;
+	width: 300px;
+  }
+  #text {  
+	outline: none;
+	min-height:100px;
+	text-align: start;
+  }
+  #text img {
+	width: 20px;
+  }
+  
+  #button {
+	color: #bbb;
+	margin-left: 40px;
+  }
+
+  * {
+	box-sizing: border-box;
+  }
+  
+  img {
+	vertical-align: middle;
+  }
