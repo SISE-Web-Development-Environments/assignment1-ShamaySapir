@@ -1,3 +1,6 @@
+html{
+	scroll-behavior: smooth;
+}
 #menu
 {
 	position: fixed;
@@ -18,8 +21,9 @@
 
 #nav a {
 	 font-size: 15px;
-	 font-family: "Comic Sans MS", cursive, sans-serif;
-}
+	 font-family: 'Shuneet', serif;
+	 font-size: 20px;
+	}
 
 #nav a:link {
 	color: white;
@@ -43,26 +47,33 @@
 
 .main {
 	padding-top: 11em;
-	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-family: 'Shuneet', serif;
 	text-align: center;
+    background: linear-gradient(to right, #ffffcc 0%, #ffcccc 100%);
 }
 
 
 #about {
 	padding-bottom: 5em;
-	background-image: url("images/about.jpg");
-	background-repeat: no-repeat;
+	display: flex;
+	color: black;
+
 }
 
 .headline {
-	padding-top: 40px;
+	padding-top: 20px;
 	font-size: 50px;
-	padding-bottom: 20px;
-	color: #3377ff;
+	padding-bottom: 40px;
+    color: #ff8d33;
+	padding-left: 10em;
+	font-weight: bold;
 }
 
 .about {
-	font-size: 20px;
+	padding-right: 1em;
+	padding-left: 1em;
+	font-size: 18px;
+	padding-bottom: 1em;
 }
 
   
@@ -71,7 +82,7 @@
 	position: relative;
 	width: 50vw;
 	margin-left: 400px;
-	padding-bottom: 1em;
+	padding-bottom: 3em;
   }
   
   /* Hide the images by default */
@@ -156,39 +167,30 @@
 
 #playlist {
 	margin-top: 1em;
+	margin-bottom: 2em;
+
 }
 
 #like {
-	background-image: url("images/frame2.jpg");
-	background-repeat: no-repeat;
-	margin-top: 4em;
-	padding-top: 15em;
-	padding-bottom: 4em;
-	width: 80vw;
-	margin-left: 10em;
+	padding-top: 5em;
+	margin-bottom: 3em;
 }
 
 #qrcoder {
-	background-image: url("images/frame.png");
-	background-repeat: no-repeat;
-	padding-top: 7em;
-	padding-bottom: 20em;
-	margin-left: 30em;
-	width: 50vw;
+	padding-bottom: 2em;
+
 
 }
 
 .formContainer {
-	width: 50vw;
-	margin-left: 25em;
-	-webkit-box-shadow: -5px 10px 36px 9px rgba(16,154,204,1);
-	-moz-box-shadow: -5px 10px 36px 9px rgba(16,154,204,1);
-	box-shadow: -5px 10px 36px 9px rgba(16,154,204,1);
+	-webkit-box-shadow: -5px 10px 36px 9px rgb(16, 204, 141);
+	-moz-box-shadow: -5px 10px 36px 9px rgb(16, 204, 141);
+	box-shadow: -5px 10px 36px 9px rgb(16, 204, 141);
 }
 
 .content {
 	display: inline-flex;
-	margin-top: 2em;
+	margin-top: 1em;
 }
 
 hr {
@@ -212,15 +214,17 @@ font-size: 20px;
 }
 
 .email {
-width: 200px;
-height: 30px;
+	width: 200px;
+	height: 30px;
+	margin-left: 10em;
+
 }
 
 #text_wrapper {
 	border: 1px solid #ccc;
 	width: 300px;
 	height: 150px;
-	text-align: start;
+	text-align: right;
   }
 
   #text img {
@@ -238,4 +242,8 @@ height: 30px;
   
   img {
 	vertical-align: middle;
+  }
+
+  .qa {
+	  padding-bottom: 5em;
   }
