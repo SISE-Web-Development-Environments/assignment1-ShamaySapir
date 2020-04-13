@@ -1,4 +1,4 @@
-# Michal Yefet Website
+# My mother - Michal Yefet Website
 
 This HTML5 and CSS3 website create by Sapir Shamay (nagar) 305649444
 Website Link: https://sise-web-development-environments.github.io/assignment1-ShamaySapir/

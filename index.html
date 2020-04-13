@@ -238,7 +238,7 @@
             </div>
             <hr>
             
-            <button type="submit" class="send">Send</button>
+            <button id="sendButton" type="submit" class="send">Send</button>
           </div>
           
         </form>
@@ -300,6 +300,15 @@ $(function(){
     function addEmoji(emojiNum) {
       var emoji = document.getElementById("text_wrapper");
       emoji.value += emojiNum;
+    }
+  </script>
+
+  <script type="text/javascript">
+    var sendButton = document.getElementById("sendButton");
+    sendButton.addEventListener("click", changeColor);
+
+    function changeColor() {
+      sendButton.style.backgroundColor = "DarkOrchid";
     }
   </script>
 
